@@ -1,23 +1,19 @@
 # nuxt.js-apollo-sample
 
-> Nuxt.js Apollo Smaple
+このリポジトリは「Hello, GraphQL for client-side!」のサンプルリポジトリです。
 
 ## Build Setup
 
+ローカルに`.env`ファイルを作成し、GitHubのアクセストークンを記述してください。
+
+書式は`.env.sample`を参照して下さい。
+
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+$ yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+$ yarn dev
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
