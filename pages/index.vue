@@ -4,8 +4,8 @@
     <div v-if="$apollo.loading">Loading...</div>
     <ul v-if="!$apollo.loading">
       <li v-for="repo in repos" :key="repo.name" class="columns">
-        <a class="is-half column" :href="repo.url">{{ repo.name }}</a>
-        <div class="column is-one-quarter" v-if="!repo.viewerHasStarred">
+        <a class="is-one-quarter column" :href="repo.url">{{ repo.name }}</a>
+        <div class="column is-narrow" v-if="!repo.viewerHasStarred">
           <button
             class="button"
             type="button"
@@ -14,7 +14,7 @@
             add star
           </button>
         </div>
-        <div class="column is-one-quarter" v-if="repo.viewerHasStarred">
+        <div class="column is-narrow" v-if="repo.viewerHasStarred">
           <button
             class="button is-danger"
             type="button"
@@ -23,7 +23,7 @@
             remove star
           </button>
         </div>
-        <span class="column is-one-quarter" v-if="repo.viewerHasStarred">Starred</span>
+        <span class="column is-one-fifth" v-if="repo.viewerHasStarred">Starred</span>
       </li>
     </ul>
   </div>
