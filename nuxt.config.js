@@ -34,6 +34,16 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: [
+    '@nuxtjs/apollo',
+    '@nuxtjs/dotenv'
+  ],
+  plugins: ['~plugins/buefy'],
+  apollo: {
+    clientConfigs: {
+      default: '~/apollo/client-configs/default.js'
+    }
+  },
+  mode: 'spa'
 }
-
