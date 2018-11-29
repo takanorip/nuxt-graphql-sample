@@ -49,7 +49,10 @@ export default {
           number_of_repos: this.number
         }
       },
-      update: ({ viewer }) => viewer.repositories.nodes
+      update: data => {
+        console.log(data)
+        return data.viewer.repositories.nodes
+      }
     }
   },
   methods: {

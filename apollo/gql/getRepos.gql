@@ -9,4 +9,7 @@ query myrepo($number_of_repos: Int!) {
       }
     }
   }
+  networkStatus @client {
+    isConnected
+  }
 }
